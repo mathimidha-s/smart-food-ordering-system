@@ -1,0 +1,70 @@
+.orders-page { padding: 40px 0 80px; }
+.orders-title { font-family: var(--font-display); font-size: 32px; font-weight: 800; margin-bottom: 4px; }
+.orders-sub { color: var(--text-muted); font-size: 15px; margin-bottom: 32px; }
+
+.orders-list { display: flex; flex-direction: column; gap: 16px; }
+
+.order-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px 24px;
+  box-shadow: var(--shadow);
+  transition: box-shadow 0.2s;
+}
+.order-card:hover { box-shadow: var(--shadow-lg); }
+
+.order-card-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+.order-restaurant-name { font-size: 17px; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+.order-date { font-size: 12px; color: var(--text-muted); }
+
+.order-status-badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.order-items-preview { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.order-item-chip {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+.order-item-chip.more { color: var(--primary); border-color: #FFCCC6; background: #FFF0EE; }
+
+.order-card-footer { display: flex; align-items: center; justify-content: space-between; }
+.order-total-info { display: flex; flex-direction: column; gap: 2px; }
+.order-total { font-size: 20px; font-weight: 800; color: var(--text); }
+.order-payment { font-size: 12px; color: var(--text-muted); }
+
+.track-btn {
+  background: var(--primary);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.track-btn:hover { background: var(--primary-dark); transform: translateY(-1px); }
+
+.orders-empty {
+  min-height: calc(100vh - 64px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+  padding: 40px;
+}
+.orders-empty-icon { font-size: 80px; }
+.orders-empty h2 { font-family: var(--font-display); font-size: 28px; font-weight: 800; }
+.orders-empty p { color: var(--text-muted); margin-bottom: 8px; }
